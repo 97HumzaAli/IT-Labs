@@ -13,11 +13,11 @@
 ## Kali Linux
 
 ### Steps
-1. Created a new Kali Linux VM in Oracle VirtualBox and allocated CPU, RAM, and storage resources.  
-2. Mounted the Kali Linux ISO and booted into the installer.  
-3. Configured installation options (language, keyboard layout, disk setup).  
-4. Completed installation and verified the VM successfully booted into the Kali Linux desktop.  
-5. Confirmed terminal access and basic network connectivity.
+1. Downloaded the pre-built VirtualBox image from the official Kali Linux website.  
+2. Extracted the package and imported the VM into Oracle VirtualBox (blue Kali logo file).  
+3. Adjusted CPU, RAM, and storage resources as needed for performance.  
+4. Started the VM and logged in with the default credentials (`kali:kali`).  
+5. Verified successful installation by accessing the Kali desktop environment and opening a terminal.
 
 ## Windows Server 2022
 
