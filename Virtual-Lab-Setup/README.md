@@ -1,4 +1,4 @@
-## Windows 10 Virtual Machine Setup
+## Windows 10, Kali Linux and Windows Server 2022 Virtual Machine Setup
 
 ### Steps
 
