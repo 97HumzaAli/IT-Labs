@@ -1,2 +1,2 @@
 # IT-Labs
-Hands-on IT Labs I've been working on
+A Collection of Hands-on IT Labs I've been working on
