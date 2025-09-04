@@ -1,5 +1,6 @@
-## Windows 10, Kali Linux and Windows Server 2022 Virtual Machine Setup
+# Windows 10, Kali Linux and Windows Server 2022 Virtual Machine Setup
 
+## Windows 10
 ### Steps
 
 1. Created a new Windows 10 (64-bit) VM in Oracle VirtualBox and configured CPU, RAM, and storage.  
