@@ -1,5 +1,11 @@
 # Lab 2: Network Security & Access Control
-
+## Skills Practiced
+- Linux firewall configuration (UFW)  
+- SSH access restriction  
+- Windows Defender Firewall rule scoping  
+- DNS sinkholing for web filtering  
+- Wireless network security best practices
+---
 ## Scenario
 A small office needs to be locked down after a phishing incident. I was asked to implement four preventative measures onto the network to prevent an attack like this from occurring in the future:
 
@@ -162,12 +168,3 @@ In a real small office, attackers often exploit weak Wi-Fi settings. To prevent 
 [Put Screenshot Here]
 
 ### Wireless hardening complete.
-
----
-
-## Skills Practiced
-- Linux firewall configuration (UFW)  
-- SSH access restriction  
-- Windows Defender Firewall rule scoping  
-- DNS sinkholing for web filtering  
-- Wireless network security best practices
