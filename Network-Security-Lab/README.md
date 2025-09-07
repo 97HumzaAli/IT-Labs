@@ -1,4 +1,8 @@
 # Lab 2: Network Security & Access Control
+
+## Project Summary
+This lab simulates hardening a small office network in response to a phishing incident. Using a VirtualBox environment, I implemented layered security controls including SSH access restriction on Kali Linux, scoped RDP firewall rules on Windows Server 2022, DNS-based web filtering with sinkholing, and wireless network hardening policies. The project demonstrates practical skills in Linux firewalling, Windows firewall management, DNS administration, and secure Wi-Fi practices.
+
 ## Skills Practiced
 - Linux firewall configuration (UFW)  
 - SSH access restriction  
