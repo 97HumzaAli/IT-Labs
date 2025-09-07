@@ -34,7 +34,7 @@ Checked connectivity between all devices using `ping`:
 
 ### Echo request and reply confirmed connectivity between devices.
 
-[Put Screenshot Here]
+![Ping Verification](./Screenshots/1%20-%20Ping%20Verififcation.png)
 
 ### 2. Install & Enable SSH
 ```bash
@@ -61,18 +61,18 @@ sudo ufw enable
 sudo ufw status
 ```
 
-[Put Screenshot Here]
+![Firewall Verification](./Screenshots/2%20-%20Firewall%20Verification.png)
 
 ### 6. Verify Connectivity from IT Admin PC
 Used **PuTTY** from Windows 10 (192.168.10.12) to connect successfully.
 
-[Put Screenshot Here]
+![SSH Verification](./Screenshots/3%20-%20SSH%20Verification.png)
 
 ### 7. Negative Test
-Changed IT Admin PC IP to `192.168.10.13` → connection failed as expected.  
+Changed IT Admin PC IP to `192.168.10.13` leads to connection fail as expected.  
 Reverted back to `192.168.10.12`.
 
-[Put Screenshot Here]
+![Changed IP SSH Verification](./Screenshots/4%20-%20Changed%20IP%20Verification.png)
 
 ### Harden SSH access complete.
 
@@ -88,20 +88,22 @@ Reverted back to `192.168.10.12`.
   - Action: **Allow the connection**  
   - Scope: **Restrict to remote IP 192.168.10.12 (IT Admin Workstation)**
 
-[Put Screenshot Here]
+![Firewall Rule only IT Admin](./Screenshots/5.1%20-%20Firewall%20Rule%20RDP%20only%20IT%20Admin.png)
+![Firewall Rule only IT Admin](./Screenshots/5.2%20-%20Firewall%20Rule%20RDP%20only%20IT%20Admin.png)
 
 ### 2. Block All Other RDP Connections
 - Verified that default “Remote Desktop” inbound rules were disabled.  
 - Ensured only the custom rule allowing 192.168.10.12 remained active.
 
-[Put Screenshot Here]
+![Firewall Rule Disabled](./Screenshots/6.1%20-%20Firewall%20Rule%20Siabled.png)
+![Firewall Rule Enabled](./Screenshots/6.2%20-%20Firewall%20Rule%20Enabled.png)
 
 ### 3. Validation
 - From Windows 10 (192.168.10.12) - Successful RDP connection.  
 - Changed IP to `192.168.10.13` - Connection failed as expected.
 
-[Put Screenshot Here]
-[Put Screenshot Here]
+![RDP Verification with Admin IP](./Screenshots/7.1%20-%20RDP%20Verification%20with%20Admin%20IP.png)
+![RDP Verification with Other IP](./Screenshots/7.2%20-%20RDP%20Verification%20with%20Other%20IP.png)
 
 ### Restricting remote access complete.
 
@@ -112,7 +114,7 @@ Reverted back to `192.168.10.12`.
 ### 1. Install DNS Server Role
 Installed the **DNS Server** role on Server 2022 and verified **DNS Manager** was available.
 
-[Put Screenshot Here]
+![Verify DNS Manager](./Screenshots/8%20-%20Verify%20DNS%20Manager.png)
 
 ### 2. Create Sinkhole Zone
 - In **Forward Lookup Zones**, created a **Primary Zone** named:
@@ -123,12 +125,14 @@ Installed the **DNS Server** role on Server 2022 and verified **DNS Manager** wa
   - Name: `*` (wildcard)  
   - IP Address: `0.0.0.0`
 
-[Put Screenshot Here]
+![Create Facebook Zone](./Screenshots/9%20-%20Create%20facebook%20zone.png)
+![DisplayDNSZone](./Screenshots/9.1%20-%20Display%20DNS%20Zone.png)
+![WildCard or A Record](./Screenshots/10%20-%20WildCard%20or%20A%20Record.png)
 
 ### 3. Configure Forwarders
 Added **Quad9 (9.9.9.9)** as a forwarder for all other lookups.
 
-[Put Screenshot Here]
+![Forwarder](./Screenshots/10.1%20-%20Forwarder.png)
 
 ### 4. Update Client DNS Settings
 - Pointed Windows 10 (192.168.10.12) to use **192.168.10.10** as its DNS server.  
@@ -142,7 +146,10 @@ ipconfig /flushdns
 - `nslookup google.com` - returned valid IP (forwarded via 9.9.9.9)  
 - Browser test confirmed Facebook blocked, other sites accessible.
 
-[Put Screenshot Here]
+![Verify DNS Filtering](./Screenshots/11.1%20-%20Verify.png)
+![Verify DNS Filtering](./Screenshots/11.2%20-%20Verify.png)
+![Verify DNS Filtering](./Screenshots/11.3.png)
+![Verify DNS Filtering](./Screenshots/11.4.png)
 
 ### DNS-based web filtering complete.
 
@@ -164,7 +171,5 @@ In a real small office, attackers often exploit weak Wi-Fi settings. To prevent 
 - Verified clients connected using WPA2/WPA3.  
 - Confirmed WPS disabled in router settings.  
 - Tested internet access remained functional.
-
-[Put Screenshot Here]
 
 ### Wireless hardening complete.
