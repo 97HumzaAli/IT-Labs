@@ -34,8 +34,8 @@ ping 192.168.10.12
 
 ---
 
-### 2. Packet Capture with Wireshark (Kali Linux)
-- Ran Wireshark on Kali to capture ICMP and RDP traffic.
+### 2. Packet Capture with Wireshark (Windows 10 IT Admin Workstation)
+- Ran Wireshark on IT Admin Workstation to capture RDP traffic.
 - Verified that ICMP pings showed up in the capture.
 - Confirmed RDP traffic from Windows 10 to Server 2022 appeared as TCP 3389 sessions.
 
@@ -47,6 +47,7 @@ ping 192.168.10.12
 - Scanned the subnet for active hosts and services.
 ```bash
 nmap -sV 192.168.10.0/24
+nmap -sV -p 3389 192.168.10.0/24
 ```
 - Verified that only expected services (e.g., SSH on Kali, RDP on Server 2022) were visible.
 
@@ -56,7 +57,7 @@ nmap -sV 192.168.10.0/24
 
 ### 4. IP Scanning with Windows 10
 - Used an IP scanner tool to verify all live devices in the subnet.
-- Cross-checked that the results matched the known topology (Server, Kali, Win10, Gateway).
+- Cross-checked that the results matched the known topology (Server, Kali, Win10).
 
 **Screenshot:** IP scanner results.
 
@@ -77,7 +78,7 @@ Validated connectivity, ARP resolution, active connections, and DNS lookups.
 
 - **netstat:** Show active TCP sessions (should include RDP from Win10 to Server)  
   ```powershell
-  netstat -a
+  netstat -n
   ```
 
 - **nslookup:** Test DNS resolution against Server 2022  
