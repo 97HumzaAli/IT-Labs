@@ -6,7 +6,7 @@ This lab focuses on validating network functionality and security configurations
 ## Skills Practiced
 - Network monitoring with Wireshark  
 - Vulnerability and service scanning with Nmap  
-- Subnet discovery using IP scanners  
+- Subnet discovery using Angry IP Scanner
 - Troubleshooting with arp, ipconfig, netstat, nslookup, ping  
 - Validating security controls (RDP restriction, DNS sinkhole)
   
@@ -57,7 +57,7 @@ nmap -sV -p 3389 192.168.10.0/24
 ---
 
 ### 4. IP Scanning with Windows 10
-- Used an IP scanner tool to verify all live devices in the subnet.
+- Used an Angry IP scanner tool to verify all live devices in the subnet.
 - Cross-checked that the results matched the known topology (Server, Kali, Win10).
 
 ![IP Scanning](./Screenshots/4.1.png)
