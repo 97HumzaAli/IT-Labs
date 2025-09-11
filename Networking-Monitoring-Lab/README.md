@@ -30,7 +30,8 @@ ping 192.168.10.10
 ping 192.168.10.11
 ping 192.168.10.12
 ```
-**Screenshot:** Baseline ping results confirming connectivity.
+![Ping Verification](./Screenshots/1.1.png)
+![Ping Verification](./Screenshots/1.2.png)
 
 ---
 
@@ -39,7 +40,7 @@ ping 192.168.10.12
 - Verified that ICMP pings showed up in the capture.
 - Confirmed RDP traffic from Windows 10 to Server 2022 appeared as TCP 3389 sessions.
 
-**Screenshot:** Wireshark capture showing ICMP and RDP packets.
+![Wireshark Packet Capture](./Screenshots/2.1.png)
 
 ---
 
@@ -51,7 +52,7 @@ nmap -sV -p 3389 192.168.10.0/24
 ```
 - Verified that only expected services (e.g., SSH on Kali, RDP on Server 2022) were visible.
 
-**Screenshot:** Nmap results listing active devices and open ports.
+![Network Scanning Nmap](./Screenshots/3.1.png)
 
 ---
 
@@ -59,7 +60,7 @@ nmap -sV -p 3389 192.168.10.0/24
 - Used an IP scanner tool to verify all live devices in the subnet.
 - Cross-checked that the results matched the known topology (Server, Kali, Win10).
 
-**Screenshot:** IP scanner results.
+![IP Scanning](./Screenshots/4.1.png)
 
 ---
 
@@ -70,29 +71,31 @@ Validated connectivity, ARP resolution, active connections, and DNS lookups.
   ```powershell
   arp -a
   ```
+![arp](./Screenshots/5.1.png)
 
 - **ipconfig:** Verify IP addressing and DNS server settings  
   ```powershell
   ipconfig /all
   ```
+![ipconfig](./Screenshots/5.2.png)
 
 - **netstat:** Show active TCP sessions (should include RDP from Win10 to Server)  
   ```powershell
   netstat -n
   ```
+![netstat](./Screenshots/5.3.png)
 
 - **nslookup:** Test DNS resolution against Server 2022  
   ```powershell
   nslookup facebook.com
   ```
+![nslookup](./Screenshots/5.4.png)
 
 - **ping:** Validate connectivity and blocked domains  
   ```powershell
   ping facebook.com
   ```
-
-**Screenshot:** Outputs from ARP, ipconfig, netstat, nslookup, and ping.
-
+![Ping Verification Exterior](./Screenshots/5.51.png)
 ---
 
 ## Validation Results
