@@ -1,4 +1,4 @@
-# Windows 10, Kali Linux and Windows Server 2022 VM Setup
+# Lab 1: Windows 10, Kali Linux and Windows Server 2022 VM Setup
 **Skills Practiced:** Virtualization, OS deployment, user configuration, system administration
 
 ## Windows 10
