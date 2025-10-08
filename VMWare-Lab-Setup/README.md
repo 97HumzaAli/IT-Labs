@@ -23,7 +23,7 @@ This part covers only the hardware selection, assembly, and reasoning behind eac
 |------------|--------|
 | **CPU** | Intel Core i7-14700K (20 C / 28 T, Raptor Lake Refresh) |
 | **Motherboard** | ASUS Pro WS W680-ACE (DDR5) |
-| **Memory** | Kingston FURY Renegade 64 GB (2 × 32 GB) DDR5-6000 CL30 KF560C30BBEK2-64 |
+| **Memory** | Kingston FURY Renegade 64 GB (2 × 32 GB) DDR5-6000 CL30 |
 | **Boot Drive** | WD Black SN770 500 GB PCIe 4.0 NVMe |
 | **Main Datastore** | WD Black SN850X 2 TB PCIe 4.0 NVMe |
 | **Network Card** | Intel X550-T2 Dual 10 Gb Ethernet (RJ-45) |
