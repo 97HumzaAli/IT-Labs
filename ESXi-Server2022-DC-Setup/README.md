@@ -59,4 +59,4 @@
 
 ## What this proves
 
-You built a **Windows Server 2022** VM, configured **static networking**, installed **AD DS + DNS**, and **promoted** the host to the first **Domain Controller** for `fna.test`.  
+**Windows Server 2022** VM, configured **static networking**, installed **AD DS + DNS**, and **promoted** the host to the first **Domain Controller** for `fna.test`.  
