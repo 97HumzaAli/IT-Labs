@@ -60,4 +60,3 @@
 ## What this proves
 
 You built a **Windows Server 2022** VM, configured **static networking**, installed **AD DS + DNS**, and **promoted** the host to the first **Domain Controller** for `fna.test`.  
-You validated domain sign-in, MMC tool availability, and baseline DC health—foundation for DHCP, GPO, file services, adding DC02, etc.
